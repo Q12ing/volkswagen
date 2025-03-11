@@ -1,0 +1,44 @@
+header {background:#0c0c0c;}
+header .container {
+    max-width:1600px; min-width:440px; height:80px; margin:0 auto;
+    position:relative; display:flex; justify-content:space-between; align-items:center;
+}
+header .container h1 {position:absolute; top:center; left:50%; transform:translateX(-50%);}
+header .container h1 a {}
+header .container h1 img {}
+header .container .hamburger {display:none;}
+header .container .hamburger img {}
+header .container nav {}
+header .container nav ul {}
+header .container nav ul li {display:inline-block; margin-right:35px;}
+header .container nav ul li:last-child {margin-right:0px;}
+header .container nav ul li a {color:#fff;font-size:0.94rem; letter-spacing:-0.02em;}
+header .container nav ul li.active {}
+header .container nav ul li.active a {}
+header .container .user {}
+header .container .user a {color:#fff; font-size:0.94rem; letter-spacing:-0.02em; margin-right:20px;}
+header .container .user a:last-child {margin-right:0px;}
+header .container .user a img {}
+/* ==================================================== */
+footer {background:#0c0c0c; padding:50px 0;}
+footer .container {max-width:1600px; min-width:440px; margin:0 auto;}
+footer .container > * {padding:0 10px;}
+footer .container .ft_top {overflow:hidden; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.3);}
+footer .container .ft_top .top_r {float:left;}
+footer .container .ft_top .top_r li {display:inline-block;}
+footer .container .ft_top .top_r li:after {
+    display:inline-block; content:''; width:1px; height:10px; background:#fff; margin-left:10px; margin-right:5px;
+}
+footer .container .ft_top .top_r li a {color:#fff; font-size:0.88rem; font-weight:400; letter-spacing:-0.02em;}
+footer .container .ft_top .top_l {float:right;}
+footer .container .ft_top .top_l a {margin-left:10px;}
+footer .container .ft_top .top_l a:first-child {margin-left:0px;}
+footer .container .ft_top .top_l a img {}
+footer .container .ft_main {display:flex; padding:30px 0 30px 10px;}
+footer .container .ft_main ul {/* line공통 선택자 */margin-right:90px;}
+footer .container .ft_main ul li {margin-bottom:12px;}
+footer .container .ft_main ul li a {color:#fff; font-size:0.81rem; letter-spacing:-0.02em;}
+footer .container .ft_main ul li.list_title {margin-bottom:20px;}
+footer .container .ft_main ul li.list_title a {font-size:0.88rem; font-weight:400;}
+footer .container .ft_btm {padding-top:20px; border-top:1px solid rgba(255,255,255,0.3);}
+footer .container .ft_btm p {color:#fff; font-size:0.88rem; font-weight:400; letter-spacing:-0.02em;}

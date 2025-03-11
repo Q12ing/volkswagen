@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen</title>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo_b.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo_b.png" type="image/x-icon">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <!-- design -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><!-- 제이쿼리 -->
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container"><!-- 컨텐츠너비 w1600 -->
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="Volkswagen"></a></h1>
+            <p class="hamburger"><img src="./images/hamburger.png" alt=""></p>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">모델</a></li>
+                    <li><a href="#">구매</a></li>
+                    <li><a href="#">체험</a></li>
+                    <li><a href="#">멤버스</a></li>
+                    <li><a href="#">폭스바겐</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <a href="#">고객센터</a>
+                <a href="#">마이페이지</a>
+                <a href="#"><img src="./images/search.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_bnr">
+            <div class="swiper main_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="container"><!-- 컨텐츠너비 w1600 -->
+                            <div class="bnr_txt">
+                                <p class="sub">The Return of Elegance.</p>
+                                <p class="main">The Arteon Allspace</p>
+                                <div class="bnr_btn">
+                                    <a href="#" class="more">자세히보기 <img src="./images/arrow_r_w.png" alt=""></a>
+                                    <a href="#" class="more">견적내기 <img src="./images/arrow_r_w.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="container"><!-- 컨텐츠너비 w1600 -->
+                            <div class="bnr_txt">
+                                <p class="sub">Welcome to Volkswagen</p>
+                                <p class="main">The all-electric ID.5</p>
+                                <div class="bnr_btn">
+                                    <a href="#" class="more">자세히보기 <img src="./images/arrow_r_w.png" alt=""></a>
+                                    <a href="#" class="more">견적내기 <img src="./images/arrow_r_w.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- ★★★★★ 1열 OUR MODELS ★★★★★ -->
+        <div class="index_wrap models_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="title">
+                    <p class="title_top">OUR MODELS</p>
+                    <p class="title_btm">역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 폭스바겐 브랜드의 라인업을 살펴보세요.</p>
+                </div>
+                <ul class="tab_menu">
+                    <li class="active"><a href="#">ALL</a></li>
+                    <li><a href="#">GOLF</a></li>
+                    <li><a href="#">SEDAN</a></li>
+                    <li><a href="#">SUV</a></li>
+                </ul>
+            </div>
+            <div class="models_box">
+                <div class="swiper all_models_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <h2 class="name">GOLF GTI</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/golf8_red.png" data-color="red" alt=""></li>
+                                <li><img src="./images/golf8_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/golf8_gray.png" data-color="gray" alt=""></li>
+                                <li><img src="./images/golf8_blue.png" data-color="blue" alt=""></li>
+                                <li><img src="./images/golf8_black.png" data-color="black" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="red" class="active"><img src="./images/chip_red.png" alt=""></button>
+                                <button type="button" data-color="white"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="gray"><img src="./images/chip_gray.png" alt=""></button>
+                                <button type="button" data-color="blue"><img src="./images/chip_blue.png" alt=""></button>
+                                <button type="button" data-color="black"><img src="./images/chip_black.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <h2 class="name">The Touareg SUV</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/touareg_blue.png" data-color="blue" alt=""></li>
+                                <li><img src="./images/touareg_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/touareg_beige.png" data-color="beige" alt=""></li>
+                                <li><img src="./images/touareg_gray.png" data-color="gray" alt=""></li>
+                                <li><img src="./images/touareg_black.png" data-color="black" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="blue" class="active"><img src="./images/chip_blue.png" alt=""></button>
+                                <button type="button" data-color="white"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="beige"><img src="./images/chip_beige.png" alt=""></button>
+                                <button type="button" data-color="gray"><img src="./images/chip_gray.png" alt=""></button>
+                                <button type="button" data-color="black"><img src="./images/chip_black.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <h2 class="name">The all-electric ID.4</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/ID4_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/ID4_blue.png" data-color="blue" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="white" class="active"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="blue"><img src="./images/chip_blue.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <h2 class="name">GOLF GTI</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/golf8_gray.png" data-color="gray" alt=""></li>
+                                <li><img src="./images/golf8_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/golf8_blue.png" data-color="blue" alt=""></li>
+                                <li><img src="./images/golf8_red.png" data-color="red" alt=""></li>
+                                <li><img src="./images/golf8_black.png" data-color="black" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="gray" class="active"><img src="./images/chip_gray.png" alt=""></button>
+                                <button type="button" data-color="white"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="blue"><img src="./images/chip_blue.png" alt=""></button>
+                                <button type="button" data-color="red"><img src="./images/chip_red.png" alt=""></button>
+                                <button type="button" data-color="black"><img src="./images/chip_black.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <h2 class="name">The Touareg SUV</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/touareg_black.png" data-color="black" alt=""></li>
+                                <li><img src="./images/touareg_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/touareg_beige.png" data-color="beige" alt=""></li>
+                                <li><img src="./images/touareg_gray.png" data-color="gray" alt=""></li>
+                                <li><img src="./images/touareg_blue.png" data-color="blue" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="black" class="active"><img src="./images/chip_black.png" alt=""></button>
+                                <button type="button" data-color="white"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="beige"><img src="./images/chip_beige.png" alt=""></button>
+                                <button type="button" data-color="gray"><img src="./images/chip_gray.png" alt=""></button>
+                                <button type="button" data-color="blue"><img src="./images/chip_blue.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide6">
+                            <h2 class="name">The all-electric ID.4</h2>
+                            <ul class="car_img">
+                                <li class="active"><img src="./images/ID4_white.png" data-color="white" alt=""></li>
+                                <li><img src="./images/ID4_blue.png" data-color="blue" alt=""></li>
+                            </ul>
+                            <div class="btn">
+                                <button type="button">견적내기</button>
+                                <button type="button">시승신청</button>
+                            </div>
+                            <div class="color_chip">
+                                <button type="button" data-color="white" class="active"><img src="./images/chip_white.png" alt=""></button>
+                                <button type="button" data-color="blue"><img src="./images/chip_blue.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- ★★★★★ 2열 폭스바겐 공식서비스 ★★★★★ -->
+        <div class="index_wrap service_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="title">
+                    <p class="title_top">폭스바겐 공식 서비스</p>
+                    <p class="title_btm">저희 공식 서비스는 순정 부품과 제조사 메뉴얼을 통한 수리로 최적화된 서비스를 제공하고 있습니다.<br>폭스바겐 맞춤형 부품과 수리로 안전하고 편안한 주행을 즐겨보세요.</p>
+                </div>
+                <ul class="service_box">
+                    <li class="estimate">
+                        <div class="top_img"><!-- background-image 처리 + after(black) 생성 -->
+                            <a href="#">
+                                <img src="./images/estimate.png" alt="">
+                            </a>
+                        </div>
+                        <div class="txt_btn">
+                            <div class="btm_txt">
+                                <a href="#" class="title">맞춤 견적 요청</a>
+                                <p class="txt">원하는 모델명과 옵션을 보내주시면<br>전문가가 맞춤견적을 진행해드립니다.</p>
+                            </div>
+                            <a a href="#" class="btn"><img src="./images/arrow_r_b.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="order">
+                        <div class="top_img"><!-- background-image 처리 + after(black) 생성 -->
+                            <a href="#">
+                                <img src="./images/order.png" alt="">
+                            </a>
+                        </div>
+                        <div class="txt_btn">
+                            <div class="btm_txt">
+                                <a href="#" class="title">부품 주문</a>
+                                <p class="txt">순정 부품 주문을 보다 빠르고 용이하게,<br>맞춤형 부품 사용으로 보다 편안한 주행을 즐기세요.</p>
+                            </div>
+                            <a a href="#" class="btn"><img src="./images/arrow_r_b.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="care">
+                        <div class="top_img"><!-- background-image 처리 + after(black) 생성 -->
+                            <a href="#">
+                                <img src="./images/care.png" alt="">
+                            </a>
+                        </div>
+                        <div class="txt_btn">
+                            <div class="btm_txt">
+                                <a href="#" class="title">사고수리 토탈케어</a>
+                                <p class="txt">24시간 고객 지원센터를 통해<br>언제 어디서나 당신의 폭스바겐을 케어 하겠습니다.</p>
+                            </div>
+                            <a a href="#" class="btn"><img src="./images/arrow_r_b.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="navigation">
+                        <div class="top_img"><!-- background-image 처리 + after(black) 생성 -->
+                            <a href="#">
+                                <img src="./images/navigation.png" alt="">
+                            </a>
+                        </div>
+                        <div class="txt_btn">
+                            <div class="btm_txt">
+                                <a href="#" class="title">네비게이션 업데이트</a>
+                                <p class="txt">폭스바겐 오너들의 도로 위 안전을 위해<br>지속적인 네비게이션 업데이트를 진행하고 있습니다.</p>
+                            </div>
+                            <a href="#" class="btn"><img src="./images/arrow_r_b.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ★★★★★ 3열 The Golf 8 홍보섹션 ★★★★★ -->
+        <div class="index_wrap golf8_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="white_name">
+                    <p>Timeless icon</p>
+                    <h2 class="car_name">The Golf 8</h2>
+                    <p class="txt">시대의 아이콘은 하루 아침에 되는 것이 아닙니다.<br>신형 8세대 골프는 8번의 고집, 8번의 변화, 8번의 데뷔를 거쳐 이 자리에 왔습니다.</p>
+                    <a href="#" class="more">자세히보기<img src="./images/arrow_r_b.png" alt=""></a>
+                </div>
+                <ul class="black_point">
+                    <li><em>30가지 컬러로 커스텀</em> 가능한 앰비언트 라이트</li>
+                    <li><em>10.25인치 TFT 디스플레이</em> 디지털 콕핏 프로</li>
+                    <li><em>터치와 제스처로 컨트롤</em> 가능한 MIB3 디스커버 프로 인포테인먼트</li>
+                    <li><em>간결하고 직관적인</em>구성의 센터콘솔 디자인</li>
+                </ul>
+            </div>
+            <p class="car"><img src="./images/brand_car.png" alt=""></p>
+        </div>
+        <!-- ★★★★★ 4열 mini bnr ★★★★★ -->
+        <div class="index_wrap mini_bnr_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="bnr1"><!-- background image+after -->
+                    <div class="txt_box">
+                        <p class="title">시승 상담 신청</p>
+                        <p class="txt">전국 지점, 대리점, 드라이빙 센터에 시승을 신청하실 수 있습니다.<br>또한 플래그십 스토어에서는 전문가의 안내와 함께 시승을 경험 하실 수 있습니다.</p>
+                        <a href="#" class="more">자세히보기 <img src="./images/arrow_r_w.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="bnr2">
+                    <div class="txt_box">
+                        <p class="title">온라인 서비스 예약</p>
+                        <p class="txt">지금, My VW 앱을 설치해 보세요!<br>앱 설치 한번으로 간편하게, 폭스바겐 온라인 예약 서비스를 이용할 수 있습니다.</p>
+                        <a href="#" class="more">자세히보기 <img src="./images/arrow_r_w.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ★★★★★ 5열 ID4 홍보 섹션 ★★★★★ -->
+        <div class="index_wrap id4_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="img_box"></div>
+                <div class="txt_box">
+                    <p class="sub">IQ Drive Life</p>
+                    <h2 class="car_name">The all-electric ID.4 </h2>
+                    <p class="info">직관적인 디자인과 실용성으로 완성된 전기 SUV<br>폭스바겐 ID.4는 전기차 라이프의 완벽한 시작을 제안합니다.</p>
+                    <a href="#" class="more">자세히보기 <img src="./images/arrow_r_w.png" alt=""></a>
+                    <ul class="thumb">
+                        <li class="active"><a href="#"><img src="./images/ID4_s1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/ID4_s2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/ID4_s3.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ★★★★★ 6열 폭스바겐 차량 옵션 ★★★★★ -->
+        <div class="index_wrap car_option_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="title">
+                    <p class="title_top">몰입에 깊이를 더해 줄 편리함</p>
+                    <p class="title_btm">폭스바겐은 운전자와 동승자 모두를 생각하는 섬세함으로 더욱 깊이 있는 몰입의 경험을 선사합니다.</p>
+                </div>
+                <ul class="tab_menu">
+                    <li class="active"><a href="#">주요기능</a></li>
+                    <li><a href="#">운전 보조 시스템</a></li>
+                    <li><a href="#">케어 시스템</a></li>
+                </ul>
+                <div class="option_swiper_box">
+                    <div class="menu1">
+                        <div class="swiper key_features">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#" class="kf_img"><img src="./images/Func_001.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">디지털 콕핏 프로</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#" class="kf_img"><img src="./images/Func_002.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">에어리어 뷰 - 360도 카메라</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <a href="#" class="kf_img"><img src="./images/Func_003.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">IQ.라이트</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <a href="#" class="kf_img"><img src="./images/Func_001.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">디지털 콕핏 프로</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <a href="#" class="kf_img"><img src="./images/Func_002.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">에어리어 뷰 - 360도 카메라</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <a href="#" class="kf_img"><img src="./images/Func_003.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">IQ.라이트</a></p>
+                                        <p class="info"><a href="#">LED 매트릭스 헤드라이트와 지능형 제어 기능인 “다이내믹 라이트 어시스트”가 결합하여 도로 상의 다른 운전자들에게 영향을 주지 않으면서 더욱 넓은 범위를 밝게 비춰줍니다.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper_button">
+                            <div class="next"><img src="./images/next_btn.png" alt=""></div>
+                            <div class="prev"><img src="./images/prev_btn.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="menu2">
+                        <div class="swiper drive_assist">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#" class="kf_img"><img src="./images/Func_004.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">Shift-by-Wire 변속 시스템</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#" class="kf_img"><img src="./images/Func_005.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">ergoActive 전동 시트</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <a href="#" class="kf_img"><img src="./images/Func_006.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">AI 자동 주행 시스템</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <a href="#" class="kf_img"><img src="./images/Func_004.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">Shift-by-Wire 변속 시스템</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <a href="#" class="kf_img"><img src="./images/Func_005.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">ergoActive 전동 시트</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <a href="#" class="kf_img"><img src="./images/Func_006.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">AI 자동 주행 시스템</a></p>
+                                        <p class="info"><a href="#">변속기와 변속 레버 간 기계적 연결없이 전기적으로 변속을 제어하는 Shift-by-Wire 변속 시스템의 적용으로 더욱 간결한 센터 콘솔 구성이 가능해졌습니다.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper_button">
+                            <div class="next"><img src="./images/next_btn.png" alt=""></div>
+                            <div class="prev"><img src="./images/prev_btn.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="menu3">
+                        <div class="swiper care_system">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#" class="kf_img"><img src="./images/Func_007.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">윈드실드 헤드업 디스플레이</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#" class="kf_img"><img src="./images/Func_008.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">모바일폰 무선 인터페이스</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <a href="#" class="kf_img"><img src="./images/Func_009.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">클리마트로닉 자동 에어컨</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <a href="#" class="kf_img"><img src="./images/Func_007.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">윈드실드 헤드업 디스플레이</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <a href="#" class="kf_img"><img src="./images/Func_008.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">모바일폰 무선 인터페이스</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <a href="#" class="kf_img"><img src="./images/Func_009.jpg" alt=""></a>
+                                    <div class="txt_box">
+                                        <p class="title"><a href="#">클리마트로닉 자동 에어컨</a></p>
+                                        <p class="info"><a href="#">차량 속도, 운전자 주행 보조 시스템 등의 정보가 앞유리에 투사되어 운전자가 시선을 돌리지 않고 집중해서 운전할 수 있도록 도와줍니다. (Prestige 적용)</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper_button">
+                            <div class="next"><img src="./images/next_btn.png" alt=""></div>
+                            <div class="prev"><img src="./images/prev_btn.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ★★★★★ 7열 앱, 매장 띠배너 ★★★★★ -->
+        <div class="index_wrap line_bnr_wrap"><!-- 전체너비 -->
+            <div class="container"><!-- 컨텐츠너비 w1600 -->
+                <div class="app bnr1">
+                    <p class="title">My VW APP 다운로드</p>
+                    <div class="btn">
+                        <a href="#" class="more">Google Play <img src="./images/app_download.png" alt=""></a>
+                        <a href="#" class="more">App Store <img src="./images/app_download.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="store bnr2">
+                    <p class="title">가까운 매장 찾기</p>
+                    <div class="btn">
+                        <a href="#" class="more">바로가기 <img src="./images/arrow_r_w.png" alt=""></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="container"> <!-- 컨텐츠너비 w1600 -->
+            <div class="ft_top">
+                <ul class="top_r">
+                    <li><a href="#">전시장 찾기</a></li>
+                    <li><a href="#">서비스센터 찾기</a></li>
+                    <li><a href="#">개인정보 처리 방침</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <div class="top_l">
+                    <a href="#"><img src="./images/twitter.png" alt=""></a>
+                    <a href="#"><img src="./images/instagram.png" alt=""></a>
+                    <a href="#"><img src="./images/facebook.png" alt=""></a>
+                </div>
+            </div>
+            <div class="ft_main">
+                <ul class="line1">
+                    <li class="list_title"><a href="#">Models</a></li>
+                    <li><a href="#">Touareg</a></li>
+                    <li><a href="#">Golf GTI</a></li>
+                    <li><a href="#">ID.4</a></li>
+                    <li><a href="#">Tiguan Allspace</a></li>
+                    <li><a href="#">Golf</a></li>
+                </ul>
+                <ul class="line2">
+                    <li class="list_title"><a href="#">Explore Volkswagen</a></li>
+                    <li><a href="#">My Volkswagen</a></li>
+                    <li><a href="#">Volkswagen International</a></li>
+                    <li><a href="#">Volkswagen Approved Cars</a></li>
+                    <li><a href="#">서비스센터 찾기</a></li>
+                    <li><a href="#">부품 가격 조회</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                </ul>
+                <ul class="line3">
+                    <li class="list_title"><a href="#">Abouts us</a></li>
+                    <li><a href="#">Touareg</a></li>
+                    <li><a href="#">Golf GTI</a></li>
+                    <li><a href="#">ID.4</a></li>
+                    <li><a href="#">Tiguan Allspace</a></li>
+                    <li><a href="#">Golf</a></li>
+                </ul>
+            </div>
+            <div class="ft_btm">
+                <p>&copy; 2025 Volkswagen</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

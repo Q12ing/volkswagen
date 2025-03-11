@@ -1,0 +1,114 @@
+/* 미디어쿼리 조건 작성위치 */
+@media screen and (max-width:1599px){
+    /* ================공통 선택자 + 헤더 + 메인배너 */
+    header .container {padding:0 80px;}
+    main .index_wrap .container {padding:0 80px;}
+    main .main_bnr .main_swiper .swiper-slide .container {padding:0 80px;}
+    /* ★★★★★ 1열 OUR MODELS(tablet) ★★★★★ */
+    /* ★★★★★ 2열 폭스바겐 공식서비스(tablet) ★★★★★ */
+    /* ★★★★★ 3열 The Golf 8 홍보섹션(tablet) ★★★★★ */
+    main .golf8_wrap .container .white_name {padding-left:15px;}
+    /* ★★★★★ 4열 mini bnr(tablet) ★★★★★ */
+    /* ★★★★★ 5열 ID4 홍보 섹션(tablet) ★★★★★ */
+    main .id4_wrap .container {padding:0;}
+    main .id4_wrap .container .txt_box {padding-left:80px;}
+    /* ★★★★★ 6열 폭스바겐 차량 옵션(tablet) ★★★★★ */
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {top:140px;}
+    /* ★★★★★ 7열 앱, 매장 띠배너(tablet) ★★★★★ */
+    main .line_bnr_wrap .container {display:flex; flex-flow:column wrap; align-items:center; padding-right:0px; padding-left:0px;}
+    main .line_bnr_wrap .container > div {width:70%; padding:40px 0;}
+    /* ================푸터 반응형디자인(tablet) */
+    footer .container {padding:0 80px;}
+}
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+@media screen and (max-width:1450px){
+    main .models_wrap .all_models_swiper .swiper-slide .btn button:first-child {margin-right:15px;}
+    main .models_wrap .all_models_swiper .swiper-slide .btn button {width:160px;}
+    main .golf8_wrap .container .white_name .car_name {font-size:3.8rem;}
+    main .golf8_wrap .container .white_name .txt {width:360px; font-size:0.88rem;}
+    main .golf8_wrap .container .black_point li {margin-bottom:70px;}
+    main .golf8_wrap .car {width:260px;}
+
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {top:120px;}
+}
+@media screen and (max-width:1200px){
+    main .golf8_wrap .container .white_name .txt {width:300px;}
+    main .golf8_wrap .car {width:220px; top:80%;}
+    main .golf8_wrap .container .black_point {padding-left:150px;}
+}
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+@media screen and (max-width:1024px){
+    /* ================공통 선택자 + 헤더 + 메인배너 */
+    
+    header .container nav ul li {margin-right:25px;}
+    .more {font-size:0.88rem; line-height:1.5; letter-spacing:-0.02em; color:#fff;}
+    main .main_bnr .main_swiper {height:600px;}
+    main .main_bnr .main_swiper .swiper-slide .container .bnr_txt {margin-bottom:90px;}
+    main .main_bnr .main_swiper .swiper-slide .container .bnr_txt .main {font-size:3.8rem;}
+    /* ★★★★★ 1열 OUR MODELS(tablet) ★★★★★ */
+    main .models_wrap .all_models_swiper .swiper-slide .btn button {width:160px;}
+    /* ★★★★★ 2열 폭스바겐 공식서비스(tablet) ★★★★★ */
+    main .service_wrap .container .service_box {flex-flow:row wrap; }
+    main .service_wrap .container .service_box li {width:calc((100% - 45px) / 2); margin-bottom:45px;}
+    main .service_wrap .container .service_box li:nth-child(3),
+    main .service_wrap .container .service_box li:nth-child(4) {margin-bottom:0;}
+    main .service_wrap .container .service_box li .txt_btn .btm_txt {height:170px;}
+    /* ★★★★★ 3열 The Golf 8 홍보섹션(tablet) ★★★★★ */
+    main .golf8_wrap {padding:200px 0;}
+    main .golf8_wrap .container .white_name .txt {width:300px;}
+    main .golf8_wrap .car {width:180px; top:90%;}
+    main .golf8_wrap .container .black_point {padding-left:150px;}
+    main .golf8_wrap .container .black_point * {font-size:0.91rem;}
+    /* ★★★★★ 4열 mini bnr(tablet) ★★★★★ */
+    main .mini_bnr_wrap .container .bnr1,
+    main .mini_bnr_wrap .container .bnr2 {padding:50px 40px 80px;}
+    main .mini_bnr_wrap .container div[class^=bnr] .txt_box .title {font-size:1.65rem;}
+    main .mini_bnr_wrap .container div[class^=bnr] .txt_box .txt {height:120px;}
+    /* ★★★★★ 5열 ID4 홍보 섹션(tablet) ★★★★★ */
+    main .id4_wrap .container {max-width:1024px; padding:0 80px; flex-flow:column wrap;}
+    main .id4_wrap .container .img_box {width:100%; height:350px;}
+    main .id4_wrap .container .txt_box {width:100%; padding-left:0px; padding-top:40px;}
+    main .id4_wrap .container .txt_box .more {text-align:right; width:100%; margin:50px 0 0px;}
+    main .id4_wrap .container .txt_box .thumb {display:none;}
+    /* ★★★★★ 6열 폭스바겐 차량 옵션(tablet) ★★★★★ */
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {top:130px; z-index:600;}
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next {right:0; background:rgba(0,0,0,0.5); padding:10px;}
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .prev {left:0; background:rgba(0,0,0,0.5); padding:10px;}
+    /* ★★★★★ 7열 앱, 매장 띠배너(tablet) ★★★★★ */
+    main .line_bnr_wrap .container > div {padding:40px 60px;}
+    /* ================푸터 반응형디자인(tablet) */
+}
+@media screen and (max-width:1000px){
+    main .golf8_wrap {padding:160px 0;}
+    main .golf8_wrap .container {padding:0 40px;}
+    main .golf8_wrap .container .white_name .txt {width:200px;}
+    main .golf8_wrap .container .white_name .car_name {font-size:3.0rem;}
+    main .golf8_wrap .container .white_name .more {margin-top:35px;}
+    main .golf8_wrap .container .black_point {padding-left:100px;}
+    main .golf8_wrap .container .black_point * {font-size:0.88rem;}
+    main .golf8_wrap .container .black_point li {margin-bottom:50px;}
+    main .golf8_wrap .car {width:140px; top:105%;}
+}
+@media screen and (max-width:910px){
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {top:100px;}
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next,
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .prev {transform:scale(0.8);}
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next {right:-5px;}
+    main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .prev {right:5px;}
+}
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+@media screen and (max-width:440px){
+    /* ================공통 선택자 + 헤더 + 메인배너 */
+    /* ★★★★★ 1열 OUR MODELS(tablet) ★★★★★ */
+    /* ★★★★★ 2열 폭스바겐 공식서비스(tablet) ★★★★★ */
+    /* ★★★★★ 3열 The Golf 8 홍보섹션(tablet) ★★★★★ */
+    /* ★★★★★ 4열 mini bnr(tablet) ★★★★★ */
+    /* ★★★★★ 5열 ID4 홍보 섹션(tablet) ★★★★★ */
+    main .golf8_wrap {background-image:url(../images/bg_005.jpg);}
+    main .golf8_wrap .container .white_name,
+    main .golf8_wrap .container .black_point {float:none;}
+    main .golf8_wrap .container .black_point {display:none;}
+}
+    /* ★★★★★ 6열 폭스바겐 차량 옵션(tablet) ★★★★★ */
+    /* ★★★★★ 7열 앱, 매장 띠배너(tablet) ★★★★★ */
+    /* ================푸터 반응형디자인(tablet) */
