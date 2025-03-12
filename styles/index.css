@@ -1,7 +1,7 @@
 /* ============전체 페이지 공통 선택자 */
 main {}
 main .index_wrap {}
-main .index_wrap .container {max-width:1600px; min-width:440px; margin:0 auto;}
+main .index_wrap .container {max-width:1600px; min-width:400px; margin:0 auto;}
 main .index_wrap .container .title {}
 main .index_wrap .container .title p {letter-spacing:-0.02em;}
 main .index_wrap .container .title .title_top {font-size:2.35rem; margin-bottom:25px; color:#fff;}
@@ -38,7 +38,7 @@ main .main_bnr .main_swiper .slide1 {
 main .main_bnr .main_swiper .slide2 {
     background-image:url(../images/main_bnr_002.jpg);
 }
-main .main_bnr .main_swiper .swiper-slide .container {max-width:1600px; min-width:440px; height:100%; margin:0 auto; display:flex; align-items:flex-end;}
+main .main_bnr .main_swiper .swiper-slide .container {max-width:1600px; min-width:400px; height:100%; margin:0 auto; display:flex; align-items:flex-end;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt {margin-bottom:150px;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt p {color:#fff;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt .sub {font-weight:300; letter-spacing:-0.02em;}
@@ -67,7 +67,7 @@ main .models_wrap .container .tab_menu li:hover a {color:#fff;}
 main .models_wrap .container .tab_menu li a {}
 main .models_wrap .container .tab_menu li.active {}
 main .models_wrap .container .tab_menu li.active a {}
-main .models_wrap .all_models_swiper {max-width:1920px; min-width:440px; height:max-content;}
+main .models_wrap .all_models_swiper {max-width:1920px; min-width:400px; height:max-content;}
 main .models_wrap .all_models_swiper .swiper-slide {/* 슬라이드 공통선택자 */
     background:#1f1f1f;
 }
@@ -126,7 +126,7 @@ main .service_wrap .container .service_box li .top_img::after {
 }
 main .service_wrap .container .service_box li .top_img a {display:inline-block; width:100%; height:100%; position:relative; z-index:102;}
 main .service_wrap .container .service_box li .top_img a img {}
-main .service_wrap .container .service_box li .txt_btn {position:relative; padding:25px;}
+main .service_wrap .container .service_box li .txt_btn {position:relative; padding:25px 40px 25px 25px; overflow:hidden;}
 main .service_wrap .container .service_box li .txt_btn .btm_txt {height:180px;}
 main .service_wrap .container .service_box li .txt_btn .btm_txt .title {
     font-size:1.25rem; font-weight:500; letter-spacing:-0.02em; margin-bottom:20px; display:inline-block;
@@ -235,7 +235,7 @@ main .id4_wrap {
     background-repeat:no-repeat;
     padding:130px 0;
 }
-main .id4_wrap .container {width:100%; max-width:1920px; min-width:440px; display:flex;}
+main .id4_wrap .container {width:100%; max-width:1920px; min-width:400px; display:flex;}
 main .id4_wrap .container .img_box {
     background-image:url(../images/ID4_b1.jpg);
     background-position:center; 
@@ -290,9 +290,9 @@ main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_but
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next {float:right; position:relative; right:-50px; cursor:pointer;}
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .prev {float:left; position:relative; right:50px; cursor:pointer;}
 /* =================== 공용선택자 끝*/
-main .car_option_wrap .container .option_swiper_box .menu1 .key_features {width:100%; min-width:440px; height:max-content;}
-main .car_option_wrap .container .option_swiper_box .menu2 {width:100%; min-width:440px; height:max-content; display:none;}
-main .car_option_wrap .container .option_swiper_box .menu3 {width:100%; min-width:440px; height:max-content; display:none;}
+main .car_option_wrap .container .option_swiper_box .menu1 .key_features {width:100%; min-width:400px; height:max-content;}
+main .car_option_wrap .container .option_swiper_box .menu2 {width:100%; min-width:400px; height:max-content; display:none;}
+main .car_option_wrap .container .option_swiper_box .menu3 {width:100%; min-width:400px; height:max-content; display:none;}
 /* ★★★★★ 7열 앱, 매장 띠배너 ★★★★★ */
 main .line_bnr_wrap {
     background-image:url(../images/bg_004.jpg);
@@ -306,9 +306,9 @@ main .line_bnr_wrap::before {
 }
 main .line_bnr_wrap .container {display:flex; position:relative; z-index:150;}
 main .line_bnr_wrap .container > div {/* 공용선택자 */
-    flex:1; color:#fff; font-size:1.5rem; letter-spacing:-0.02em; overflow:hidden; padding:50px 80px;
+    flex:1; color:#fff; overflow:hidden; padding:50px 80px;
 }
-main .line_bnr_wrap .container > div .title {color:#fff; float:left; line-height:1.5;}
+main .line_bnr_wrap .container > div .title {color:#fff; float:left; font-size:1.5rem; letter-spacing:-0.02em; line-height:1.5;}
 main .line_bnr_wrap .container > div .btn {float:right;}
 main .line_bnr_wrap .container > div .btn .more {padding:0 3px; width:110px; padding-bottom:7px; border-bottom:1px solid #fff;}
 main .line_bnr_wrap .container > div .btn .more img {float:right;}

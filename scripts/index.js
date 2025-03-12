@@ -18,7 +18,7 @@ const allModelsSwiper = new Swiper('.all_models_swiper',{
     },
     breakpoints:{
         1000:{slidesPerView:1.8,},
-        440:{slidesPerView:1.3,},
+        400:{slidesPerView:1.3,},
         0:{slidesPerView:1},
         }
 });
@@ -103,7 +103,7 @@ const keyFeatures = new Swiper('.key_features',{
     },
     breakpoints:{
         1599:{slidesPerView:3,},
-        440:{slidesPerView:2,},
+        400:{slidesPerView:2,},
         }
 });
 const driveAssist = new Swiper('.drive_assist',{
@@ -116,7 +116,7 @@ const driveAssist = new Swiper('.drive_assist',{
     },
     breakpoints:{
         1599:{slidesPerView:3,},
-        440:{slidesPerView:2,},
+        400:{slidesPerView:2,},
         }
 });
 const careSystem = new Swiper('.care_system',{
@@ -129,7 +129,7 @@ const careSystem = new Swiper('.care_system',{
     },
     breakpoints:{
         1599:{slidesPerView:3,},
-        440:{slidesPerView:2,},
+        400:{slidesPerView:2,},
         }
 });
 

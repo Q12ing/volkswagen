@@ -1,6 +1,6 @@
 header {background:#0c0c0c;}
 header .container {
-    max-width:1600px; min-width:440px; height:80px; margin:0 auto;
+    max-width:1600px; min-width:400px; height:80px; margin:0 auto;
     position:relative; display:flex; justify-content:space-between; align-items:center;
 }
 header .container h1 {position:absolute; top:center; left:50%; transform:translateX(-50%);}
@@ -21,7 +21,7 @@ header .container .user a:last-child {margin-right:0px;}
 header .container .user a img {}
 /* ==================================================== */
 footer {background:#0c0c0c; padding:50px 0;}
-footer .container {max-width:1600px; min-width:440px; margin:0 auto;}
+footer .container {max-width:1600px; min-width:400px; margin:0 auto;}
 footer .container > * {padding:0 10px;}
 footer .container .ft_top {overflow:hidden; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.3);}
 footer .container .ft_top .top_r {float:left;}
@@ -29,6 +29,7 @@ footer .container .ft_top .top_r li {display:inline-block;}
 footer .container .ft_top .top_r li:after {
     display:inline-block; content:''; width:1px; height:10px; background:#fff; margin-left:10px; margin-right:5px;
 }
+footer .container .ft_top .top_r li:last-child:after {display:none;}
 footer .container .ft_top .top_r li a {color:#fff; font-size:0.88rem; font-weight:400; letter-spacing:-0.02em;}
 footer .container .ft_top .top_l {float:right;}
 footer .container .ft_top .top_l a {margin-left:10px;}
