@@ -1,11 +1,11 @@
-header {background:#0c0c0c;}
+header {min-width:380px; background:#0c0c0c;}
 header .container {
-    max-width:1600px; min-width:400px; height:80px; margin:0 auto;
+    width:1600px; height:80px; margin:0 auto;
     position:relative; display:flex; justify-content:space-between; align-items:center;
 }
 header .container h1 {position:absolute; top:center; left:50%; transform:translateX(-50%);}
 header .container h1 a {}
-header .container h1 img {}
+header .container h1 img {width:100%;}
 header .container .hamburger {display:none;}
 header .container .hamburger img {}
 header .container nav {}
@@ -20,8 +20,8 @@ header .container .user a {color:#fff; font-size:0.94rem; letter-spacing:-0.02em
 header .container .user a:last-child {margin-right:0px;}
 header .container .user a img {}
 /* ==================================================== */
-footer {background:#0c0c0c; padding:50px 0;}
-footer .container {max-width:1600px; min-width:400px; margin:0 auto;}
+footer {min-width:380px; background:#0c0c0c; padding:50px 0;}
+footer .container {width:100%; margin:0 auto;}
 footer .container > * {padding:0 10px;}
 footer .container .ft_top {overflow:hidden; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.3);}
 footer .container .ft_top .top_r {float:left;}

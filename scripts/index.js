@@ -11,6 +11,7 @@ const mainSwiper = new Swiper('.main_swiper',{
 const allModelsSwiper = new Swiper('.all_models_swiper',{
     loop:true,
     spaceBetween:30,
+    slidesPerView:1,
     centeredSlides:true,
     pagination: {
         el: ".models_wrap .swiper-pagination",
@@ -18,8 +19,7 @@ const allModelsSwiper = new Swiper('.all_models_swiper',{
     },
     breakpoints:{
         1000:{slidesPerView:1.8,},
-        400:{slidesPerView:1.3,},
-        0:{slidesPerView:1},
+        700:{slidesPerView:1.4,},
         }
 });
 
@@ -95,41 +95,38 @@ $('.car_option_wrap .tab_menu li').click(function(e){
 /* 6열 탭메뉴 관련 스와이퍼 작업 */
 const keyFeatures = new Swiper('.key_features',{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:40,
+    spaceBetween:25,
+    slidesPerView:2,
     navigation:{
         nextEl:'.option_swiper_box .menu1 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu1 .prev', //이전 버튼
     },
     breakpoints:{
-        1599:{slidesPerView:3,},
-        400:{slidesPerView:2,},
+        1400:{slidesPerView:3,spaceBetween:40,},
         }
 });
 const driveAssist = new Swiper('.drive_assist',{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:40,
+    spaceBetween:25,
+    slidesPerView:2,
     navigation:{
         nextEl:'.option_swiper_box .menu2 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu2 .prev', //이전 버튼
     },
     breakpoints:{
-        1599:{slidesPerView:3,},
-        400:{slidesPerView:2,},
+        1400:{slidesPerView:3,spaceBetween:40,},
         }
 });
 const careSystem = new Swiper('.care_system',{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:40,
+    spaceBetween:25,
+    slidesPerView:2,
     navigation:{
         nextEl:'.option_swiper_box .menu3 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu3 .prev', //이전 버튼
     },
     breakpoints:{
-        1599:{slidesPerView:3,},
-        400:{slidesPerView:2,},
+        1400:{slidesPerView:3,spaceBetween:40,},
         }
 });
 

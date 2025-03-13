@@ -104,7 +104,7 @@
     main .golf8_wrap .container .black_point {float:none;}
     main .golf8_wrap .container .white_name {width:100%;}
     main .golf8_wrap .container .white_name .car_name {font-size:3.8rem;}
-    main .golf8_wrap .container .white_name .txt {font-size:1.0rem; width:90%;}
+    main .golf8_wrap .container .white_name .txt {font-size:1.0rem; width:100%;}
     main .golf8_wrap .container .black_point {display:none;}
     main .golf8_wrap .car {width:140px; top:115%;}
     main .mini_bnr_wrap .container {flex-flow:column nowrap}
@@ -117,7 +117,8 @@
 /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
 @media screen and (max-width:700px){
     /* ================공통 선택자 + 헤더 + 메인배너 */
-    header .container {padding:0 15px;}
+    header .container {padding:0 15px; height:60px;}
+    header .container h1 a {display:inline-block; width:35px; height:35px;}
     main .main_bnr .main_swiper {height:400px;}
     main .main_bnr .main_swiper .swiper-slide .container {padding:0 15px;}
     main .main_bnr .main_swiper .swiper-slide .container .bnr_txt {margin-bottom:60px;}
@@ -129,8 +130,8 @@
     main .index_wrap .container .tab_menu li a {font-size:0.94rem;}
     /* ★★★★★ 1열 OUR MODELS(mobile) ★★★★★ */
     main .models_wrap {padding:80px 0 40px;}
-    main .models_wrap .all_models_swiper .swiper-slide {padding:30px 20px 50px 20px;}
-    main .models_wrap .all_models_swiper .swiper-slide .btn button {width:130px; padding:12px 0;}
+    main .models_wrap .all_models_swiper {width:calc(100% - 30px);}
+    main .models_wrap .all_models_swiper .swiper-slide .btn button {width:110px; padding:10px 0;}
     /* ★★★★★ 2열 폭스바겐 공식서비스(mobile) ★★★★★ */
     main .service_wrap {padding:80px 15px}
     main .service_wrap .container .service_box li {width:100%; margin-bottom:30px;}
@@ -163,10 +164,12 @@
     footer .container .ft_top .top_r,
     footer .container .ft_top .top_l {float:none;}
     footer .container .ft_top .top_l {margin-top:20px;}
+    footer .container .ft_main ul {margin-right:40px;}
 }
 /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
 @media screen and (max-width:600px){
     main .index_wrap .container .tab_menu li a {padding:0 15px 10px;}
+    main .models_wrap .all_models_swiper .swiper-slide {padding-top:20px;}
     main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .swiper-slide .kf_img {margin-bottom:20px;}
     main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {top:60px;}
     main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next,
