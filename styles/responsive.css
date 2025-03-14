@@ -1,7 +1,7 @@
 /* 미디어쿼리 조건 작성위치 */
 @media screen and (max-width:1599px){
     /* ================공통 선택자 + 헤더 + 메인배너 */
-    header .container {padding:0 80px;}
+    header .container {padding:0 80px; width:100%;}
     main .index_wrap .container {padding:0 80px;}
     main .main_bnr .main_swiper .swiper-slide .container {padding:0 80px;}
     /* ★★★★★ 1열 OUR MODELS(tablet) ★★★★★ */
@@ -18,7 +18,7 @@
     main .line_bnr_wrap .container {display:flex; flex-flow:column wrap; align-items:center; padding-right:0px; padding-left:0px;}
     main .line_bnr_wrap .container > div {width:70%; padding:40px 0;}
     /* ================푸터 반응형디자인(tablet) */
-    footer .container {padding:0 80px;}
+    footer .container {padding:0 80px; width:100%;}
 }
 /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
 @media screen and (max-width:1450px){

@@ -30,13 +30,135 @@
         <div class="container"><!-- 컨텐츠너비 w1600 -->
             <h1><a href="./index.html"><img src="./images/logo.png" alt="Volkswagen"></a></h1>
             <p class="hamburger"><img src="./images/hamburger.png" alt=""></p>
+            <!-- 모바일 메뉴 클릭 시 실행되는 서브메뉴 전체(아래) -->
+            <div class="m_nav_box">
+                <div class="m_nav_top">
+                    <p class="m_nav_logo"><img src="./images/logo.png" alt="Volkswagen"></p>
+                    <p class="m_nav_close"><img src="./images/close.png" alt=""></p>
+                </div>
+                <ul class="m_nav_list">
+                    <li><a href="#">모델</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">SEDAN</a></li>
+                            <li><a href="#">SUV</a></li>
+                            <li><a href="#">전기차</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">구매</a>
+                        <ul>
+                            <li><a href="#">견적내기</a></li>
+                            <li><a href="#">구매상담</a></li>
+                            <li><a href="#">상담신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">체험</a>
+                        <ul>
+                            <li><a href="#">시승 서비스 신청</a></li>
+                            <li><a href="#">전시장 방문 예약</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">멤버스</a>
+                        <ul>
+                            <li><a href="#">My Volkswagen App</a></li>
+                            <li><a href="#">서비스 및 부품</a></li>
+                            <li><a href="#">내 차 서비스</a></li>
+                            <li><a href="#">액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">폭스바겐</a>
+                        <ul>
+                            <li><a href="#">폭스바겐 인증 중고차</a></li>
+                            <li><a href="#">운전자 보조 시스템</a></li>
+                            <li><a href="#">안전 및 편의사양</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">이달의 프로모션</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <nav>
                 <ul>
-                    <li class="active"><a href="#">모델</a></li>
-                    <li><a href="#">구매</a></li>
-                    <li><a href="#">체험</a></li>
-                    <li><a href="#">멤버스</a></li>
-                    <li><a href="#">폭스바겐</a></li>
+                    <li class="active"><a href="#">모델</a>
+                        <div class="depth_box" id="menu_model">
+                            <ul class="sub">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">SEDAN</a></li>
+                                <li><a href="#">SUV</a></li>
+                                <li><a href="#">전기차</a></li>
+                            </ul>
+                            <div class="depth_all_btm">
+                                <a href="#"><img src="./images/depth_estimate.png" alt="견적내기"></a>
+                                <a href="#"><img src="./images/depth_catalog.png" alt="카탈로그"></a>
+                                <a href="#"><img src="./images/depth_testDrive.png" alt="시승신청"></a>
+                                <a href="#"><img src="./images/depth_benefit.png" alt="구매혜택"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">구매</a>
+                        <div class="depth_box" id="menu_buy">
+                            <ul class="sub">
+                                <li><a href="#">견적내기</a></li>
+                                <li><a href="#">구매상담</a></li>
+                                <li><a href="#">상담신청</a></li>
+                            </ul>
+                            <div class="depth_all_btm">
+                                <a href="#"><img src="./images/depth_estimate.png" alt="견적내기"></a>
+                                <a href="#"><img src="./images/depth_catalog.png" alt="카탈로그"></a>
+                                <a href="#"><img src="./images/depth_testDrive.png" alt="시승신청"></a>
+                                <a href="#"><img src="./images/depth_benefit.png" alt="구매혜택"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">체험</a>
+                        <div class="depth_box" id="menu_experience">
+                            <ul class="sub">
+                                <li><a href="#">시승 서비스 신청</a></li>
+                                <li><a href="#">전시장 방문 예약</a></li>
+                            </ul>
+                            <div class="depth_all_btm">
+                                <a href="#"><img src="./images/depth_estimate.png" alt="견적내기"></a>
+                                <a href="#"><img src="./images/depth_catalog.png" alt="카탈로그"></a>
+                                <a href="#"><img src="./images/depth_testDrive.png" alt="시승신청"></a>
+                                <a href="#"><img src="./images/depth_benefit.png" alt="구매혜택"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">멤버스</a>
+                        <div class="depth_box" id="menu_members">
+                            <ul class="sub">
+                                <li><a href="#">My Volkswagen App</a></li>
+                                <li><a href="#">서비스 및 부품</a></li>
+                                <li><a href="#">내 차 서비스</a></li>
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
+                            <div class="depth_all_btm">
+                                <a href="#"><img src="./images/depth_estimate.png" alt="견적내기"></a>
+                                <a href="#"><img src="./images/depth_catalog.png" alt="카탈로그"></a>
+                                <a href="#"><img src="./images/depth_testDrive.png" alt="시승신청"></a>
+                                <a href="#"><img src="./images/depth_benefit.png" alt="구매혜택"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">폭스바겐</a>
+                        <div class="depth_box" id="menu_volkswagen">
+                            <ul class="sub">
+                                <li><a href="#">폭스바겐 인증 중고차</a></li>
+                                <li><a href="#">운전자 보조 시스템</a></li>
+                                <li><a href="#">안전 및 편의사양</a></li>
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">이달의 프로모션</a></li>
+                            </ul>
+                            <div class="depth_all_btm">
+                                <a href="#"><img src="./images/depth_estimate.png" alt="견적내기"></a>
+                                <a href="#"><img src="./images/depth_catalog.png" alt="카탈로그"></a>
+                                <a href="#"><img src="./images/depth_testDrive.png" alt="시승신청"></a>
+                                <a href="#"><img src="./images/depth_benefit.png" alt="구매혜택"></a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div class="user">

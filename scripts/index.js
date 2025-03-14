@@ -146,3 +146,13 @@ menuTap.forEach((menu, index) => {
         menuList[index].style.display = 'block';
     });
 });
+
+/* 전체 a태그 새로고침 안되게 하기-추후 common.js 파일로 이동 예정 */
+const aTag=document.querySelectorAll('body a')
+console.log(aTag[1]);
+
+aTag.forEach(item => {
+    item.addEventListener('click',function(e){
+        e.preventDefault();
+    })
+});

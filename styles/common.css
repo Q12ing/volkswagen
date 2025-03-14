@@ -1,6 +1,6 @@
 header {width:100%; min-width:380px; background:#0c0c0c;}
 header .container {
-    height:80px; margin:0 auto;
+    width:1600px; height:80px; margin:0 auto;
     position:relative; display:flex; justify-content:space-between; align-items:center;
 }
 header .container h1 {position:absolute; top:center; left:50%; transform:translateX(-50%);}
@@ -8,7 +8,22 @@ header .container h1 a {}
 header .container h1 img {width:100%;}
 header .container .hamburger {display:none;}
 header .container .hamburger img {}
+/* 모바일 nav 태그 시작 */
+header .container .m_nav_box {display:none;} /* 뎁스메뉴 작업중 */
+header .container .m_nav_box .m_nav_top {}
+header .container .m_nav_box .m_nav_top p {}
+header .container .m_nav_box .m_nav_top .m_nav_logo {}
+header .container .m_nav_box .m_nav_top .m_nav_close {}
+header .container .m_nav_box .m_nav_top p img {}
+header .container .m_nav_box .m_nav_list {}
+header .container .m_nav_box .m_nav_list > li {}
+header .container .m_nav_box .m_nav_list > li > a {}
+header .container .m_nav_box .m_nav_list > li > a ul {}
+header .container .m_nav_box .m_nav_list > li > a ul li  {}
+header .container .m_nav_box .m_nav_list > li > a ul li a  {}
+/* 모바일 nav 태그 끝 */
 header .container nav {}
+header .container nav .depth_box {display:none;} /* 뎁스메뉴 작업중 */
 header .container nav ul {}
 header .container nav ul li {display:inline-block; margin-right:35px;}
 header .container nav ul li:last-child {margin-right:0px;}
@@ -21,7 +36,7 @@ header .container .user a:last-child {margin-right:0px;}
 header .container .user a img {}
 /* ==================================================== */
 footer {width:100%; min-width:380px; background:#0c0c0c; padding:50px 0;}
-footer .container {width:100%; margin:0 auto;}
+footer .container {width:1600px; margin:0 auto;}
 footer .container > * {padding:0 10px;}
 footer .container .ft_top {overflow:hidden; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.3);}
 footer .container .ft_top .top_r {float:left;}
